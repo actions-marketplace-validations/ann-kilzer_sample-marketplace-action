@@ -1,12 +1,9 @@
-#!/bin/bash
-
-
-set -e
+#!/bin/bash -l
 
 
 if echo "$*" | grep -i -q CAT;
 then
-    echo 🐈️
+    echo 🐈️  >> $GITHUB_OUTPUT
 else
-    echo 😃
+    echo 😃 >> $GITHUB_OUTPUT
 fi

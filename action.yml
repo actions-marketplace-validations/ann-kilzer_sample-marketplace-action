@@ -1,0 +1,15 @@
+name: 'Emoji Output'
+description: 'Outputs a cat or a smiley face'
+inputs:
+  keyword:  # id of input
+    description: 'keyword representing desired emoji'
+    required: false
+    default: ''
+outputs:
+  emoji: # id of output
+    description: 'emoji'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.keyword }}
