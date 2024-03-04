@@ -14,5 +14,5 @@ runs:
   args:
     - ${{ inputs.keyword }}
 branding:
-  icon: "smile"
+  icon: "star"
   color: "blue"
